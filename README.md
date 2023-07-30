@@ -1,0 +1,2 @@
+# wildfire
+Wildfire Recognition AI
