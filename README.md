@@ -24,7 +24,7 @@ Directions
 8. Download resnet: cmake ../
 9. Run the tools that train will use later. make || sudo make install || sudo ldconfig
 10. Get out of build, then cd into classification. cd .. || cd python/training/classification
-11. Download the resnet18.onnx file in this project, cd into models and put it in models/forestfire. cd models || mkdir forestfire
+11. Download the resnet18.zip file in this project and unzip it, cd into models and put it in models/forestfire. cd models || mkdir forestfire
 12. Download the images and put it anywhere in classification, not in the models folder nor the forestfire folder.
 13. Download the labels.txt file and put it anywhere in classification.
 14. Run the command to use the resnet file to classify your images. imagenet --model=models/forestfire/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=(filepath)/labels.txt (filepath)/(image/folder) (output location) ||| MAKE SURE THAT YOU REPLACE PARTS OF THE COMMAND WITH YOUR FILEPATH, IMAGE/FOLDER AND OUTPUT LOCATION OR THIS COMMAND WILL NOT WORK. THIS COMMAND IS RUN IN THE classification DIRECTORY.
